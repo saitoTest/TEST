@@ -20,4 +20,5 @@ deployment:
     branch: master
     commands:
       - ./gradlew assembleRelease
-
+  post:
+    - mv cover $CIRCLE_ARTIFACTS
